@@ -204,6 +204,7 @@ func resourceKeyVault() *schema.Resource {
 				"contact": {
 					Type:     schema.TypeSet,
 					Optional: true,
+					Computed: true,
 					Elem: &schema.Resource{
 						Schema: map[string]*schema.Schema{
 							"email": {
